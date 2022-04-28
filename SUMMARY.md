@@ -14,7 +14,7 @@
 
 * [메시지 발송](dispatch/README.md)
   * [SMS](dispatch/sms.md)
-  * [LMS/MMS](dispatch/lms-mms.md)
+  * [MMS/LMS](dispatch/mms-lms.md)
 * [발송 결과 코드](result-code.md)
 
 ## 참고사항
