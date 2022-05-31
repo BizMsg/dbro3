@@ -1,4 +1,4 @@
-# LMS/MMS
+# MMS/LMS
 
 멀티미디어의 전송과 관리를 위하여 기존의 em\_tran 테이블은 전송에 관련된 정보를 보관하고, em\_tran\_mms는 콘텐트에 대한 정보를 관리합니다.
 
@@ -104,40 +104,3 @@ VALUES (
 \-> 아래와 같이 DBro 구동 스크립트를 작성하여 LANG 설정 값을 **ko\_KR.euckr** 로 지정해야 한다.
 {% endhint %}
 
-
-
-**1.서버 한글 캐릭터셋 확인 (리눅스 기준)**
-
-`$ locale -a | grep ko`&#x20;
-
-_ko\_KR_\
-_ko\_KR.euckr_ \
-_ko\_KR.utf8_\
-_korean_ \
-_korean.euc_
-
-**2.DBro 기동 스크립트 작성 (DBro 프로세스 실행 시, LANG 설정 값 지정 위함)**
-
-`$ vi start.sh`
-
-```shell
-#!/bin/bash
-export LANG=ko_KR.euckr
-java -jar /home/dbro/dbro.jar /home/dbro/dbro.conf > /dev/null &
-```
-
-
-
-**3. DBro 프로세스 재시작 ( 실행 시, 2번에서 작성한 스크립트로 실행 )**&#x20;
-
-1\) 기존 프로세스 종료\
-`$ ps -ef | grep dbro`\
-\*\*\*\* 29335      1        0        May23 pts/0      00:00:07 java -jar /home/dbro/dbro.jar&#x20;
-
-/home/dbro/dbro.conf&#x20;
-
-`$ kill 29335`
-
-2\) 프로세스 실행&#x20;
-
-`$ ../start.sh`

@@ -22,41 +22,7 @@ dbro.conf 파일을 만들기 위한 참고 파일로서, 이 문서에서 언�
 1. 디렉터리 생성 (**영문으로 명명**)
 2. dbro.conf.sample -> dbro.conf
 3. 설정 수정 (DBRO Configuration 참고)
-4. 실행 스크립트(start.sh) 작성 및 Agent (dbro3) 행
-
-> 1\) 서버 한글 캐릭터셋 확인 (리눅스 기준)
->
-> `$ locale -a | grep ko`
->
-> _ko\_KR_\
-> _ko\_KR.euckr_ \
-> _ko\_KR.utf8_\
-> _korean_ \
-> _korean.euc_
->
-> 2\) DBro 기동 스크립트 작성 (DBro 프로세스 실행 시, LANG 설정 값 지정 위함)
->
-> `$ vi start.sh`
->
-> ```shell
-> #!/bin/bash
-> export LANG=ko_KR.euckr
-> java -jar /home/dbro/dbro.jar /home/dbro/dbro.conf > /dev/null &
-> ```
->
-> 3\) DBro 프로세스 재시작 ( 실행 시, 2번에서 작성한 스크립트로 실행 )&#x20;
->
-> &#x20;\- 기존 프로세스 종료\
-> `$ ps -ef | grep dbro`\
-> \*\*\*\* <mark style="color:red;">29335</mark>      1        0        May23 pts/0      00:00:07 java -jar /home/dbro/dbro.jar /home/dbro/dbro.conf&#x20;
->
-> `$ kill` <mark style="color:red;">29335</mark>
->
-> &#x20;\- 프로세스 실행&#x20;
->
-> `$ ./start.sh`
-
-****
+4. dbro.jar 실행
 
 **Windows**
 
