@@ -15,7 +15,7 @@ DBro는 (주)다우기술의 UFIT G/W 서비스 사용자에게 제공되는 dae
 
 ### 고객 시스템과 연동
 
-DBro의 실행을 위해서는 Database가 반드시 필요하며, Database에 Record Insert하여 메시지 발송이 가능니다.
+DBro의 실행을 위해서는 Database가 반드시 필요하며, Data Table 에 Record를 Insert하여 메시지 발송이 가능합니다.
 
 
 
