@@ -58,7 +58,7 @@ TRAN\_RSLT
 
 ![](<.gitbook/assets/image (3).png>)
 
-최종착신 망: SKT / KT / LGT
+최종착신 망: SKT / KTF / LGT
 
 ### 결과 수신
 
