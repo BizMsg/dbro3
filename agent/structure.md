@@ -12,7 +12,7 @@ DBro는 실행 시 3개의 쓰레드가 동작합니다.
 
 **DBro Sender**
 
-주기적으로 DB를 감시하며, DB에서 보낼 메시지를 Select해서 SMSGW로 보냅다.
+주기적으로 DB를 감시하며, DB에서 보낼 메시지를 Select해서 SMSGW로 보냅니다.
 
 **DBro Receiver**
 
