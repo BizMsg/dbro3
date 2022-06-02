@@ -186,8 +186,6 @@ recv.log_level=INFO
 info.log_level=INFOs
 ```
 
-
-
 **sms\_ip, sms\_port**
 
 (주)다우기술에서 SMS/URL/MMS 전송을 원하는 업체에 제공하며, DBro가 접속할 게이트 웨이의 ip와 port번호를 설정한다.
@@ -205,7 +203,7 @@ log file이 기록될 폴더 설정, 생략 시 현재 DBro 실행 폴더에 DBR
 셋팅시 MMS메시지로 전송한 MMS파일이 꾸러미로 만들어진다.
 
 {% hint style="info" %}
-운영체제가 윈도우인 경우 path 경로를 "/" 또는 "\\\\" 로 입력하여야 합니다.&#x20;
+운영체제가 윈도우인 경우 path 경로를 "/" 또는 "\\\\" 로 입력하여야 합니다.
 {% endhint %}
 
 **dbro\_sign**
@@ -218,7 +216,7 @@ log file이 기록될 폴더 설정, 생략 시 현재 DBro 실행 폴더에 DBR
 
 **db\_name**
 
-DBMS의 종류를 설정 한다. \
+DBMS의 종류를 설정 한다.\
 ORACLE, MSSQL, MYSQL, SYBASE, DB2, INFORMIX 中 1
 
 **db\_driver, db\_url**
@@ -251,7 +249,7 @@ DBro의 결과 수신모듈의 사용여부를 결정한다.\
 **limit\_begin, limit\_end**
 
 발송제한 시간대 설정\
-limit\_begin=발송제한 시작 시간 (0100 \~ 2400) 분 단위까지 적용가능 limit\_end=발송제한 종료 시간 (0100 \~ 2400) 분 단위까지 적용가능
+limit\_begin=발송제한 시작 시간 (0100 \~ 2400) 분 단위까지 적용가능 limit\_end=발송제한 종료 시간 (0100 \~ 2400) 분 단위까지 적용 가능
 
 **before\_time**
 
@@ -274,6 +272,3 @@ DBMS에 SELECT 질의 시 tran\_pr 로 정렬해서 순서대로 가져올 것�
 **consol.log\_level, system.log\_level, send.log\_level, recv.log\_level, info.log\_level**
 
 각각 콘솔로그, 전체로그, 메시지 전송로그, 메시지결과처리로그, DBro 정보 로그이며, 모두 INFO로 설정 해서 사용한다. 프로그램상의 문제시에 DEBUG(개발자모드)로 프로그램의 상태를 확인해 볼 수 있다.
-
-
-
