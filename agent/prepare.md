@@ -12,19 +12,21 @@ HDD : 2GB 의 여유공간 (100만 건당 약 300MB 차지)
 
 DBro를 구동하기 위해 다우기술에 **System OS Version**과 **DB Version**을 알려주어, 해당 Binary File을 받아 설치해야 합니다.
 
+
+
 ### Database
 
-고객 System과 연동을 위해 ID, Password 등을 미리 알아야 합니다.\
+고객 System과 연동을 위해 ID, Password 등을 미리 알아야 합니다. \
 또한 DB사용을 위해서는 JDBC의 URL 과 JDBC Driver Type 을 알아야 합니다.
 
 **연동할 수 있는 Database ID, Password**
 
-기존에 사용하던 ID를 사용하거나 새로운 ID를 만들어서 사용합니다.\
-(ID 생성 방법은 DBMS의 매뉴얼을 참고)
+기존에 사용하던 ID를 사용하거나 새로운 ID를 만들어서 사용합니다. \
+ID 생성 방법은 DBMS의 매뉴얼을 참고
 
 **Database**
 
-DBro가 사용할 Database를 새로 생성합니다.\
+DBro가 사용할 Database를 새로 생성합니다. \
 기존에 사용하던 것을 사용해도 무방하나 DBro용으로 따로 만들어 사용하는 것을 권장합니다.
 
 **DB 지원 버전 안내**
@@ -53,15 +55,15 @@ DBro는 하나의 모듈에 비즈뿌리오 계정 하나만 세팅하도록 권
 
 ### 다우기술 SMSG 접속 환경
 
-실행하기에 앞서 (주)다우기술 Service에 접속 할 수 있는 환경을 미리 알아야 하는데, 다음과 같습니다.\
+실행하기에 앞서 (주)다우기술 Service에 접속 할 수 있는 환경을 미리 알아야 하는데, 다음과 같습니다. \
 이 항목은 DBro의 binary를 받을 때 같이 받는 것이므로, 혹시 빠져있다면 다시 연락하여 준비해야 합니다.
 
 **SMSG host IP, Port**
 
-네트워크상의 연결을 확인하기 위한 정보입니다.\
+네트워크상의 연결을 확인하기 위한 정보입니다. \
 이 값이 있어야 DBro가 실행 시에 접속할 서버의 물리적 위치를 찾을 수 있습니다. (주)다우기술 Service측에서 받은 IP와 Port로 Telnet연결을 시도해서 연결이 되면 정상입니다.
 
 **SMSG ID, Password**
 
-설치된 DBro는 Server에서 인증이 되어 있어야 합니다.\
+설치된 DBro는 Server에서 인증이 되어 있어야 합니다. \
 각 DBro는 고유 ID와 Password를 부여 받게 됩니다. 이 값이 세팅 되지 않으면 접속 후 인증에러를 내며 종료됩니다.
