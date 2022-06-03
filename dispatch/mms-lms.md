@@ -104,3 +104,51 @@ values ('010-000-0000','010-000-0000', '1', now(),
 
 \-> DBro 구동 스크립트를 별도 작성하여 LANG 설정 값을 **ko\_KR.euckr** 로 지정해야 합니다.
 {% endhint %}
+
+> 1\. 서버 한글 캐릭터셋 확인 ( 리눅스 서버 기준 )
+>
+> $ locale -a | grep ko
+>
+> ko\_KR
+>
+> ko\_KR.euckr
+>
+> ko\_KR.utf8
+>
+> korean
+>
+> korean.euc
+>
+> &#x20;
+>
+> 2\. DBro 기동 스크립트 작성 ( DBro 프로세스 실행 시, LANG 설정 값 지정 위함 )
+>
+> Ex )
+>
+> $ vi start.sh
+>
+> &#x20;
+>
+> \#!/bin/bash
+>
+> export LANG=ko\_KR.euckr
+>
+> java -jar /home/dbro/dbro.jar /home/dbro/dbro.conf > /dev/null &
+>
+> &#x20;
+>
+> 3\. DBro 프로세스 재시작 ( 실행 시, 2번에서 작성한 스크립트로 실행 )
+>
+> 1\) 기존 프로세스 종료
+>
+> $ ps -ef | grep dbro
+>
+> \*\*\*\* 29335     1  0 May23 pts/0    00:00:07 java -jar /home/dbro/dbro.jar /home/dbro/dbro.conf
+>
+> $ kill 29335
+>
+> &#x20;
+>
+> 2\) 프로세스 실행
+>
+> $ ../start.sh
