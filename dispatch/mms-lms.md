@@ -49,9 +49,9 @@ DBro에서 참조 가능한 위치에 있는 File의 Full Path입니다.
 
 ### **service\_dep**
 
-ALL
+**ALL**
 
-file\_type \*\*\*\* , file\_name 에 지정한 콘텐트가 모든 통신사와 호환이 되는 경우
+file\_type, file\_name 에 지정한 콘텐트가 모든 통신사와 호환이 되는 경우
 
 ### 발송 쿼리
 
