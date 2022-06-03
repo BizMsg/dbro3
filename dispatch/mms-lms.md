@@ -58,6 +58,7 @@ file\_type \*\*\*\* , file\_name 에 지정한 콘텐트가 모든 통신사와 
 **Oracle**
 
 ```sql
+-- 컨텐츠 데이터 Insert
 INSERT INTO em_tran_mms(
 mms_seq, file_cnt, mms_body, mms_subject, 
 file_type1, file_name1,service_dep1)
@@ -65,6 +66,7 @@ VALUES(
 em_tran_mms_seq.nextval, 2 , '본문 내용','메시지 제목',
 'IMG','D:\MMSTestFile\01.IMG', 'ALL');
 
+-- 발송 데이터 Insert
 INSERT INTO em_tran(tran_pr, tran_phone, tran_callback, tran_status, tran_date,
 tran_msg, tran_etc4,tran_type) 
 values (em_tran_pr.nextval, '010-000-0000','010-000-0000', '1', sysdate(), 
@@ -74,6 +76,7 @@ values (em_tran_pr.nextval, '010-000-0000','010-000-0000', '1', sysdate(),
 **MYSQL**
 
 ```sql
+-- 컨텐츠 데이터 Insert
 INSERT INTO em_tran_mms(
 mms_seq, file_cnt, mms_body, mms_subject, 
 file_type1, file_name1,service_dep1)
@@ -81,6 +84,7 @@ VALUES (
 1, 2, '본문 내용','메시지 제목', 
 'IMG','D:\MMSTestFile\01.IMG', 'ALL' );
 
+-- 발송 데이터 Insert
 INSERT INTO em_tran (tran_phone, tran_callback, tran_status, tran_date, 
 tran_msg, tran_etc4,tran_type) 
 values ('010-000-0000','010-000-0000', '1', now(), 
