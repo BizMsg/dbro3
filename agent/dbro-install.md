@@ -12,7 +12,7 @@ Binary 배포판에는 다음과 같은 파일들이 들어 있습니다.
 
 **dbro.conf.sample**
 
-dbro.conf 파일을 만들기 위한 참고 파일로서, dbro agent 설정에 대한 sample 파일입니다.
+dbro.conf 파일을 만들기 위한 참고 파일로서, dbro agent 설정을 한 sample 파일입니다.
 
 ### 설치
 
