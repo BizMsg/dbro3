@@ -62,12 +62,12 @@ INSERT INTO em_tran_mms(
 mms_seq, file_cnt, mms_body, mms_subject, 
 file_type1, file_name1,service_dep1)
 VALUES(
-em_tran_mms_seq.nextval, 2 , '본문 내용','메시지 제목’,
+em_tran_mms_seq.nextval, 2 , '본문 내용','메시지 제목',
 'IMG','D:\MMSTestFile\01.IMG', 'ALL');
 
 INSERT INTO em_tran(tran_pr, tran_phone, tran_callback, tran_status, tran_date,
 tran_msg, tran_etc4,tran_type) 
-values (em_tran_pr.nextval, '010-000-0000','010-000-0000','1', sysdate(), 
+values (em_tran_pr.nextval, '010-000-0000','010-000-0000', '1', sysdate(), 
 'mms body', em_tran_mms_seq.currval,'6');
 ```
 
@@ -78,12 +78,12 @@ INSERT INTO em_tran_mms(
 mms_seq, file_cnt, mms_body, mms_subject, 
 file_type1, file_name1,service_dep1)
 VALUES (
-1, 2, '본문 내용','메시지 제목’, 
+1, 2, '본문 내용','메시지 제목', 
 'IMG','D:\MMSTestFile\01.IMG', 'ALL' );
 
 INSERT INTO em_tran (tran_phone, tran_callback, tran_status, tran_date, 
 tran_msg, tran_etc4,tran_type) 
-values ('010-000-0000','010-000-0000','1', now(), 
+values ('010-000-0000','010-000-0000', '1', now(), 
 'mms body', 1,'6');
 ```
 
