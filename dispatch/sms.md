@@ -57,10 +57,9 @@ URL 전송임을 구분하기 위해서 추가로 tran\_type 필드를 조정해
 URL전송을 위해서는 특정한 포맷을 맞추어서 DB에 입력하여야 합니다.
 
 URL전송의 경우도 data자체는 tran\_msg에 입력됩니다. URL은 보통 Title과 URL 두 가지 부분으로 이루어져 있기 때문에, 이를 지원하려면 "URL TITLE" 즉, URL이 먼저 나오고 중간에 스페이스 하나로 분리한 후, 타이틀을 써주면 됩니다. URL 이후 최초로 나오는 스페이스가 구분자가 됩니다.\
-예를 들어, http://wap.test.co.kr 을 테스트라는 이름으로 전송하고 싶다면
-
-'http://wap.test.co.kr 테스트'
-
+\
+예를 들어, http://wap.test.co.kr 을 테스트라는 이름으로 발송하고 싶다면\
+'http://wap.test.co.kr 테스트'\
 라고 입력하면 됩니다.
 {% endhint %}
 

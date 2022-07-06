@@ -15,7 +15,7 @@ DBro를 구동하기 위해 다우기술에 **System OS Version**과 **DB Versio
 ### Database
 
 고객 System과 연동을 위해 ID, Password 등을 미리 알아야 합니다.\
-또한 DB사용을 위해서는 JDBC의 URL 과 JDBC Driver Type 을 알아야 합니다.
+또한 DB사용을 위해서는 **JDBC**의 **URL** 과 **JDBC Driver Type** 을 알아야 합니다.
 
 **연동할 수 있는 Database ID, Password**
 

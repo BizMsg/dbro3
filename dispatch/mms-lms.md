@@ -1,12 +1,12 @@
 # MMS/LMS
 
-멀티미디어의 전송과 관리를 위하여 기존의 em\_tran 테이블은 전송에 관련된 정보를 보관하고, em\_tran\_mms는 콘텐츠에 대한 정보를 관리합니다.
+멀티미디어의 전송과 관리를 위하여 기존의 **em\_tran** 테이블은 전송에 관련된 정보를 보관하고, **em\_tran\_mms**는 콘텐츠에 대한 정보를 관리합니다.
 
 즉, 콘텐츠 정보를 사전에 작성하여 다수의 대상에게 동일한 내용을 한번에 보낼 수 있습니다.\
 \
-MMS전송 시 em\_tran의 tran\_type을 '6'으로 조정해야 하고, tran\_etc4의 필드에 em\_tran\_mms의 mms\_seq를 참조합니다.
+MMS전송 시 **em\_tran**의 **tran\_type**을 '**6**'으로 조정해야 하고, **tran\_etc4**의 필드에 **em\_tran\_mms**의 **mms\_seq**를 참조합니다.
 
-메시지 전송 전에 em\_tran\_mms의 정보가 입력이 되어야 하며, 콘텐츠 정보는 DBro에서 참조 가능한 위치에 있어야 합니다.
+메시지 전송 전에 **em\_tran\_mms**의 정보가 입력이 되어야 하며, 콘텐츠 정보는 DBro에서 **참조 가능한 위치**에 있어야 합니다.
 
 ### 파일 타입
 
@@ -107,7 +107,7 @@ values ('010-000-0000','010-000-0000', '1', now(),
 
 > 1\. 서버 한글 캐릭터셋 확인 ( 리눅스 서버 기준 )
 >
-> $ locale -a | grep ko
+> `$ locale -a | grep ko`
 >
 > ko\_KR
 >
@@ -125,7 +125,7 @@ values ('010-000-0000','010-000-0000', '1', now(),
 >
 > Ex )
 >
-> $ vi start.sh
+> `$ vi start.sh`
 >
 > &#x20;
 >
@@ -133,7 +133,7 @@ values ('010-000-0000','010-000-0000', '1', now(),
 >
 > export LANG=ko\_KR.euckr
 >
-> java -jar /home/dbro/dbro.jar /home/dbro/dbro.conf > /dev/null &
+> `java -jar /home/dbro/dbro.jar /home/dbro/dbro.conf > /dev/null &`
 >
 > &#x20;
 >
@@ -141,14 +141,14 @@ values ('010-000-0000','010-000-0000', '1', now(),
 >
 > 1\) 기존 프로세스 종료
 >
-> $ ps -ef | grep dbro
+> `$ ps -ef | grep dbro`
 >
 > \*\*\*\* 29335     1  0 May23 pts/0    00:00:07 java -jar /home/dbro/dbro.jar /home/dbro/dbro.conf
 >
-> $ kill 29335
+> `$ kill 29335`
 >
 > &#x20;
 >
 > 2\) 프로세스 실행
 >
-> $ ../start.sh
+> `$ ../start.sh`

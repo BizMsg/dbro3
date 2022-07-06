@@ -35,29 +35,29 @@ DBro는 실행되면 바로 트랜잭션 테이블(em\_tran, em\_tran\_mms)이 �
 
 ### em\_tran\_mms (MMS 컨텐츠 테이블)
 
-|       필드 명      | 필수입력 여부 |                                             내용                                             |
-| :-------------: | :-----: | :----------------------------------------------------------------------------------------: |
-|     mms\_seq    |    필수   |                         자동 증가하는 것으로 em\_tran\_mms의 primary key가 된다.                        |
-|    file\_cnt    |    필수   |                                    MMS전송 시 첨부파일 개수 (1이상)                                   |
-|    build\_yn    |    -    | <p>dbro.jar 프로그램 내부에서 사용 된다. 입력 불가</p><p>(0:정상으로 빌드 되었으며 사용가능,<br>9:빌드 에러 발생 메시지 발송불가)</p> |
-|    mms\_body    |    옵션   |                                        장문 전송 시 본문 내용                                       |
-|   mms\_subject  |    필수   |                                           메시지 제목                                           |
-|   file\_type1   |    옵션   |                            MMS파일타입. (IMG, TXT, ADO, MOV) , 생략가능                            |
-|   file\_type2   |    옵션   |                                       MMS 파일타입 생략 가능                                       |
-|   file\_type3   |    옵션   |                                       MMS 파일타입 생략 가능                                       |
-|   file\_type4   |    옵션   |                                       MMS 파일타입 생략 가능                                       |
-|   file\_type5   |    옵션   |                                       MMS 파일타입 생략 가능                                       |
-|   file\_name1   |    옵션   |                                   MMS 파일경로를 포함한 파일명 생략가능                                   |
-|   file\_name2   |    옵션   |                                   MMS 파일경로를 포함한 파일명 생략가능                                   |
-|   file\_name3   |    옵션   |                                   MMS 파일경로를 포함한 파일명 생략가능                                   |
-|   file\_name4   |    옵션   |                                   MMS 파일경로를 포함한 파일명 생략가능                                   |
-|   file\_name5   |    옵션   |                                   MMS 파일경로를 포함한 파일명 생략가능                                   |
-|  service\_dep1  |    옵션   |                                      MMS파일 서비스통신사 생략가능                                     |
-|  service\_dep2  |    옵션   |                                      MMS파일 서비스통신사 생략가능                                     |
-|  service\_dep3  |    옵션   |                                      MMS파일 서비스통신사 생략가능                                     |
-|  service\_dep4  |    옵션   |                                      MMS파일 서비스통신사 생략가능                                     |
-|  service\_dep5  |    옵션   |                                      MMS파일 서비스통신사 생략가능                                     |
-| skn\_file\_name |    -    |                                dbro.jar 프로그램 내부에서 사용, 입력 불가                                |
+|       필드 명       | 필수입력 여부 |                                             내용                                             |
+| :--------------: | :-----: | :----------------------------------------------------------------------------------------: |
+|   **mms\_seq**   |    필수   |                         자동 증가하는 것으로 em\_tran\_mms의 primary key가 된다.                        |
+|   **file\_cnt**  |    필수   |                                    MMS전송 시 첨부파일 개수 (1이상)                                   |
+|     build\_yn    |    -    | <p>dbro.jar 프로그램 내부에서 사용 된다. 입력 불가</p><p>(0:정상으로 빌드 되었으며 사용가능,<br>9:빌드 에러 발생 메시지 발송불가)</p> |
+|     mms\_body    |    옵션   |                                        장문 전송 시 본문 내용                                       |
+| **mms\_subject** |    필수   |                                           메시지 제목                                           |
+|    file\_type1   |    옵션   |                            MMS파일타입. (IMG, TXT, ADO, MOV) , 생략가능                            |
+|    file\_type2   |    옵션   |                                       MMS 파일타입 생략 가능                                       |
+|    file\_type3   |    옵션   |                                       MMS 파일타입 생략 가능                                       |
+|    file\_type4   |    옵션   |                                       MMS 파일타입 생략 가능                                       |
+|    file\_type5   |    옵션   |                                       MMS 파일타입 생략 가능                                       |
+|    file\_name1   |    옵션   |                                   MMS 파일경로를 포함한 파일명 생략가능                                   |
+|    file\_name2   |    옵션   |                                   MMS 파일경로를 포함한 파일명 생략가능                                   |
+|    file\_name3   |    옵션   |                                   MMS 파일경로를 포함한 파일명 생략가능                                   |
+|    file\_name4   |    옵션   |                                   MMS 파일경로를 포함한 파일명 생략가능                                   |
+|    file\_name5   |    옵션   |                                   MMS 파일경로를 포함한 파일명 생략가능                                   |
+|   service\_dep1  |    옵션   |                                      MMS파일 서비스통신사 생략가능                                     |
+|   service\_dep2  |    옵션   |                                      MMS파일 서비스통신사 생략가능                                     |
+|   service\_dep3  |    옵션   |                                      MMS파일 서비스통신사 생략가능                                     |
+|   service\_dep4  |    옵션   |                                      MMS파일 서비스통신사 생략가능                                     |
+|   service\_dep5  |    옵션   |                                      MMS파일 서비스통신사 생략가능                                     |
+|  skn\_file\_name |    -    |                                dbro.jar 프로그램 내부에서 사용, 입력 불가                                |
 
 ### MSSQL
 
