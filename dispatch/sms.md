@@ -6,7 +6,7 @@
 
 * **tran\_pr, tran\_phone, tran\_status, tran\_date, tran\_msg, tran\_type**
 
-**tran\_pr**은 AUTO INCREMENT
+**tran\_pr** -> AUTO INCREMENT
 
 **tran\_status** -> 1
 
