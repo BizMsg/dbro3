@@ -8,7 +8,7 @@ tran\_status : 1 (전송요구)\
 tran\_status : 2 (SMSGW에 전송됨, 결과 대기중)\
 tran\_status : 3 (SMSGW에서 결과 받음)
 
-![](<../.gitbook/assets/image (2).png>)
+![](<../.gitbook/assets/image (2) (1).png>)
 
 {% hint style="info" %}
 tran\_date: 전송 요청시간, 이 값이 현재시간과 같거나 과거 ( before\_time 설정시간 ) 이며, tran\_status='1' 인 것이 전송 대상이 됩다. 전송 후 tran\_status 는 바로 '2'가 됩니다.

@@ -20,3 +20,7 @@
 ## 참고사항
 
 * [DBro Version Upgrade](undefined/dbro-version-upgrade.md)
+
+***
+
+* [개정이력](undefined-1.md)
