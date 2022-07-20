@@ -272,3 +272,23 @@ DBMS에 SELECT 질의 시 tran\_pr 로 정렬해서 순서대로 가져올 것�
 **consol.log\_level, system.log\_level, send.log\_level, recv.log\_level, info.log\_level**
 
 각각 콘솔로그, 전체로그, 메시지 발송로그, 메시지 결과처리 로그, DBro 정보 로그이며, 모두 INFO로 설정 해서 사용한다. 프로그램상의 문제시에 DEBUG(개발자모드)로 프로그램의 상태를 확인해 볼 수 있다.
+
+
+
+### 추가 옵션 구성
+
+**추가 기능 사용 여부에 따라 설정할 수 있는 옵션에 대한 안내입니다.**
+
+1\) 최초 발신사업자 식별코드(RESELLER\_CODE) 설정 (v5.8.0 이상)
+
+RESELLER\_CODE 는 특부가사업자 등록번호(9 자리 숫자로 구성)를 의미합니다.&#x20;
+
+1. USE\_RESELLERCODE (ON/OFF) 옵션 설정\
+   메시지 발송시 식별코드를 포함하여 전송합니다.\
+   \- config/dbro.conf 파일 내에 다음과 같이 설정하여 사용합니다.\
+   "USE\_RESELLERCODE = Y" - 기본값(DEFAULT): N
+2. 메시지/로그 테이블 RESELLER\_CODE VARCHAR(10) 컬럼 추가\
+   \- 신규 설치시 위 옵션을 설정 후 구동하면 자동으로 추가됩니다.\
+   \- 기존 테이블(EM\_TRAN/EM\_LOG)이 존재한다면 테이블 삭제 후 모듈을 재구동하거나 해당 컬럼을 추가하여 발송 가능합니다.
+
+![](<../.gitbook/assets/image (2).png>)
